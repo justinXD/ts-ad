@@ -7,7 +7,13 @@ export interface IProduct extends IBaseModel{ // como id, createdAt y updatedAt 
   // createdAt: Date;
   // updatedAt: Date;
   title: string;
+  image: string;
+  description: string;
   stock: number;
   size?: Sizes;
+  color: string;
+  price: number;
   category: ICategory;
+  isNew: boolean;
+  tags: string[];
 }
